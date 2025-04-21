@@ -12,7 +12,7 @@ text = ' '.join(df['REVIEWS'].astype(str))
 custom_stopwords = set(stop_words['Stop Words'])
 custom_stopwords.update(STOPWORDS)
 
-# Generate word cloud
+# Generate and visualize word cloud
 wordcloud = WordCloud(width=800, height=400, background_color='white', stopwords=custom_stopwords).generate(text)
 
 plt.figure(figsize=(10, 5))
